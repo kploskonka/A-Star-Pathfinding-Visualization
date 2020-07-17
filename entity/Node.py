@@ -23,6 +23,15 @@ class Node:
     def is_empty(self):
         return self.color == colors.WHITE
 
+    def is_path(self):
+        return self.color == colors.PURPLE
+
+    def is_open(self):
+        return self.color == colors.GREEN
+
+    def is_closed(self):
+        return self.color == colors.RED
+
     def reset(self):
         self.color = colors.WHITE
 
@@ -34,6 +43,15 @@ class Node:
 
     def make_end(self):
         self.color = colors.TURQUOISE
+
+    def make_path(self):
+        self.color = colors.PURPLE
+
+    def make_open(self):
+        self.color = colors.GREEN
+
+    def make_closed(self):
+        self.color = colors.RED
 
     def lower_neighbor(self, grid):
         return grid[self.row + 1][self.column]
@@ -64,3 +82,6 @@ class Node:
 
         if not self.left_neighbor(grid).is_barrier():
             self.neighbors.append(self.left_neighbor(grid))
+
+    def get_position(self):
+        return self.row, self.column
