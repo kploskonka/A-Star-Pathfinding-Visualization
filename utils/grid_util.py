@@ -6,6 +6,7 @@ from queue import PriorityQueue
 
 
 WINDOW = pygame.display.set_mode((SIZE, SIZE))
+pygame.display.set_caption('A* Pathfinder visualization')
 
 start = None
 end = None
