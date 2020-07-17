@@ -53,6 +53,9 @@ class Node:
     def make_closed(self):
         self.color = colors.RED
 
+    def clear(self):
+        self.color = colors.WHITE
+
     def lower_neighbor(self, grid):
         return grid[self.row + 1][self.column]
 

@@ -20,7 +20,8 @@ def guess_distance(point1, point2):
 def reconstruct_path(came_from, current, grid):
     while current in came_from:
         current = came_from[current]
-        current.make_path()
+        if current != start:
+            current.make_path()
         draw(grid)
 
 
@@ -147,9 +148,9 @@ def reset_on_position(mouse_position, grid):
     if node.is_empty():
         return
 
-    if node.is_start():
+    if node == start:
         start = None
-    elif node.is_end():
+    elif node == end:
         end = None
 
     node.clear()
