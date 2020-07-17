@@ -77,8 +77,8 @@ class Node:
         if not self.upper_neighbor(grid).is_barrier():
             self.neighbors.append(self.upper_neighbor(grid))
 
-        if not self.upper_neighbor(grid).is_barrier():
-            self.neighbors.append(self.upper_neighbor(grid))
+        if not self.right_neighbor(grid).is_barrier():
+            self.neighbors.append(self.right_neighbor(grid))
 
         if not self.left_neighbor(grid).is_barrier():
             self.neighbors.append(self.left_neighbor(grid))
