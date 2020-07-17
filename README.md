@@ -13,5 +13,13 @@ Tool made to help understand A* pathfinding algorithm by visualizing it.
 - **Return Key** - Start visualization
 - **C Key** - Clear grid
 
+## Screenshots
+- Points and barriers set up by user
+![Set up barriers](https://i.imgur.com/m0hskon.png) 
+- Algorithm searching for correct path
+![Searching for path](https://i.imgur.com/6iuHxBt.png) 
+- Path found
+![Path found](https://i.imgur.com/oRBK2Li.png)
+
 ___
 Katarzyna Płoskonka &copy; 2020
